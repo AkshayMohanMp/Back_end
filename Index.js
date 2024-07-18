@@ -1,9 +1,6 @@
 const express =require("express");
 const dotenv =require('dotenv');
 const cors = require('cors');
-// const {Doctor} = require("./department/user/books.json")
-
-// routes
 const gynecRouter= require("./routes/gynec");
 const gastroRouter= require("./routes/gastro");
 const orthoRouter= require("./routes/ortho");
@@ -29,7 +26,7 @@ const app = express();
 
 DbConnection();
 
-const PORT=process.env.PORT || 8082;
+const port=process.env.PORT || 8082;
 
 app.use(express.json());
 app.use(cors());
@@ -72,6 +69,6 @@ app.all("*",(req,res)=>{
 })
 
 
-app.listen(PORT,() => {
-    console.log(`server is up and running at port : ${PORT}`)
+app.listen(port,() => {
+    console.log(`server is up and running at port : ${port}`)
 })
