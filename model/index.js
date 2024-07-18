@@ -1,0 +1,29 @@
+const GynecModel =require("./gynec-model");
+const GynecimagesModel =require("./gynecimages");
+const EmergencyModel =require("./emergency-model");
+const ENTModel =require("./ent-model");
+const GastroModel =require("./gastro-model");
+const OrthoModel =require("./ortho-model");
+const Orthoimages =require("./orthoimage");
+const CareerModel =require("./career-model");
+const Lastimages =require("./lastimage");
+const Gastroimages =require("./gastroimage");
+const Galleryimages =require("./gallery");
+const ENTimages =require("./entimages");
+const Emergencyimages =require("./emergencyimages");
+// const CareerModel =require("./career-model");
+
+
+module.exports={GynecModel}
+module.exports={GynecimagesModel}
+module.exports={EmergencyModel}
+module.exports={ENTModel}
+module.exports={GastroModel}
+module.exports={OrthoModel}
+module.exports={CareerModel}
+module.exports={Lastimages}
+module.exports={Gastroimages}
+module.exports={ENTimages}
+module.exports={Galleryimages}
+module.exports={Emergencyimages}
+module.exports={Orthoimages}
